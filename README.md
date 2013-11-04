@@ -2,25 +2,42 @@
 
 Copyright (c) 2013 VMware, Inc. All rights reserved.
 
-####1. Compile:
+####Compilation
 
-  From the root directory
+  To compile the source execute the following command from the root directory
 
   ```bash
   make
   ```
 
-####2. Run the API server:
+####Run the API server
 
-  From the root directory execute the following command
+  **Pre-requisites** : Python packages `python-openvswitch` and `python-ldap` are installed
+
+  * On Unbuntu run the following command  to install `python-openvswitch` package
+  
+  ```bash
+  `sudo apt-get python-openvswitch
+  ```
+  * To install `python-ldap` python package execute the following command
+
+  ```bash
+  sudo easy_install python-ldap
+  ```
+  * From the root directory execute the following command
   
   ```bash
   ./scripts/run_api_server
   ```
+  This starts the API server. It listens on `http://0.0.0.0:8080` for incoming HTTP requests.
 
-####3. Run the unit tests
+####Run the unit tests
 
-   From the root directory
+   **Pre-requisites** : Python packages`nosetests` python package is installed.
+   
+   
+
+   From the root directory run the following command
   
    ```bash
    ./scripts/run_tests
