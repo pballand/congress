@@ -12,9 +12,10 @@ Copyright (c) 2013 VMware, Inc. All rights reserved.
 
 ####API server
 
-#####Install Pre-requisites
+**Install Pre-requisites**
 
   Make sure Python packages `python-openvswitch` and `python-ldap` are installed
+
 
   * On Unbuntu run the following command  to install `python-openvswitch` package
   
@@ -26,7 +27,7 @@ Copyright (c) 2013 VMware, Inc. All rights reserved.
   ```bash
   sudo easy_install python-ldap
   ```
-#####Run the API Server
+**Run the API Server**
 
   * From the root directory execute the following command
   
@@ -35,10 +36,17 @@ Copyright (c) 2013 VMware, Inc. All rights reserved.
   ```
   This starts the API server. It listens on `http://0.0.0.0:8080` for incoming HTTP requests.
 
-####Run the unit tests
+####Unit tests
 
-   **Pre-requisites** : Python packages`nosetests` python package is installed.
+   **Pre-requisites** 
 
+   * `nose` python test package is installed.
+
+   ```bash
+   sudo easy_install nose
+   ```
+
+   **Running the Tests**
 
    From the root directory run the following command
   
