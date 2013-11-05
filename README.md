@@ -3,14 +3,15 @@
 Copyright (c) 2013 VMware, Inc. All rights reserved.
 
 ####Compilation
+-------------
 
   To compile the source execute the following command from the root directory
 
   ```bash
   make
   ```
-
 ####API server
+-------------
 
 **Install Pre-requisites**
 
@@ -37,6 +38,7 @@ Copyright (c) 2013 VMware, Inc. All rights reserved.
   This starts the API server. It listens on `http://0.0.0.0:8080` for incoming HTTP requests.
 
 ####Unit tests
+-------------
 
    **Pre-requisites** 
 
